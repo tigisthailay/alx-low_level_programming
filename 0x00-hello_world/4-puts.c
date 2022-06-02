@@ -1,6 +1,11 @@
 #include <stdio.h>
-/* my c put functiions*/
-
+/**
+ *
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ *
+ */
 int main(void)
 /*main-entry pont*/
 {
