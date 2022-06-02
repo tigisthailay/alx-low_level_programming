@@ -1,11 +1,5 @@
 #include <stdio.h>
-/**
- *
- * main function - Entry point
- *
- *Return: Always 0
- *
- */
+/* my c put functiions*/
 
 int main(void)
 {
