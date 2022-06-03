@@ -1,7 +1,7 @@
 #include <stdio.h>
-/*
- * tg
- * cs
+/**
+ * main - print all possible combination of singl digit numbers
+ * Return: Always 0.
  */
 int main(void)
 {
@@ -16,6 +16,5 @@ int main(void)
 		putchar(' ');
 	}
 	putchar('\n');
-	
 	return (0);
 }
