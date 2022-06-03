@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-/*
- * main - Entry point
+/**
+ * main - print all numbers base 10 with out using any char var
  *
  * Return: Always 0
  */
