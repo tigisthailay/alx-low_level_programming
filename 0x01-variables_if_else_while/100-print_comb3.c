@@ -1,7 +1,7 @@
 #include <stdio.h>
-/*
- * tg
- * cs
+/**
+ * main - prints all possible combination of two digits
+ * Return: Always 0.
  */
 int main(void)
 {
@@ -17,13 +17,12 @@ int main(void)
 				putchar((a % 10) + '0');
 				putchar((b % 10) + '0');
 				if (a == 8 && b == 9)
-					continue;				
+					continue;
 				putchar(',');
 				putchar(' ');
 			}
 		}
 	}
 	putchar('\n');
-
 	return (0);
 }
