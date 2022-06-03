@@ -1,10 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
 /**
- *main -entry point
- *return-always success
+ * main - printing last digit of number
+ *
+ * Return: Always 0 (success)
  */
+
 int main(void)
 {
 	int n;
@@ -28,6 +31,5 @@ int main(void)
 		printf("Last digit of %d is %d and is 0\n",
 				n, n % 10);
 	}
-
 	return (0);
 }
