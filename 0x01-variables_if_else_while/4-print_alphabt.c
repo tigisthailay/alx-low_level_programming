@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main: return a-z except q and e
- * return :always 0.
+ * main - return a-z except q and e
+ * Return: Always 0.
  */
 int main(void)
 {
