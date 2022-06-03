@@ -3,7 +3,7 @@
 #include <time.h>
 /**
  * main - Entry point
- * Return: Always 0 (Success)
+ * Return: Always 0
  */
 int main(void)
 {
@@ -18,6 +18,5 @@ int main(void)
 		printf("%d is zero\n", n);
 	else
 		printf("%d is zero\n", n);
-
 	return (0);
 }
