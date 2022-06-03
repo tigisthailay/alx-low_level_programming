@@ -2,12 +2,12 @@
 #include <stdlib.h>
 #include <time.h>
 /*
- * main - prints random number either posotive, negative or zero
+ *main - Entry Point
  *
- * Return : 0
+ *Return : always 0 (success)
  */
 int main(void)
-{	
+{
 	int n;
 
 	srand(time(0));
