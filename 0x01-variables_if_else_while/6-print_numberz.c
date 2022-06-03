@@ -1,8 +1,11 @@
 #include <stdio.h>
+
 /*
- * main : return 1-0 with out char
- * return: always 0.
+ * main - Entry point
+ *
+ * Return: Always 0
  */
+
 int main(void)
 {
 	int n;
