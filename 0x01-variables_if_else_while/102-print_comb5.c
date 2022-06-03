@@ -1,7 +1,7 @@
 #include <stdio.h>
-/*
- * tg
- * cs
+/**
+ * main - printing two digit numbers
+ * Return: Always 0.
  */
 int main(void)
 {
@@ -11,20 +11,15 @@ int main(void)
 	{
 		for (q = p + 1; q <= 99; q++)
 		{
-			putchar((p / 10) + '0');
-			putchar((p % 10) + '0');
-			putchar(' ');
-			putchar((q / 10) + '0');
-			putchar((q % 10) + '0');
+			putchar(p);
+			putchar(q);
 
 			if (p == 98 && q == 99)
 				continue;
-
 			putchar(',');
-			putchar(' ');
+			putchar (' ');
 		}
 	}
 	putchar('\n');
-
 	return (0);
 }
