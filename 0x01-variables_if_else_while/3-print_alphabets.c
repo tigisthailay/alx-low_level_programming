@@ -1,18 +1,23 @@
 #include <stdio.h>
-/*
- * main:returns lower and upper case letters
- * retun :always 0.
+
+/**
+ * main - returns lower and upper case letters
+ * Return: Always 0.
  */
+
 int main(void)
 {
 	char c;
 
 	for (c = 'a'; c <= 'z'; c++)
+	{
 		putchar(c);
-	
-	for (c = 'A'; c <= 'Z'; c++)
-		putchar(c);
-	putchar('\n');
+	}
 
+	for (c = 'A'; c <= 'Z'; c++)
+	{
+		putchar(c);
+	}
+	putchar('\n');
 	return (0);
 }
