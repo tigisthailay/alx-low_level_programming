@@ -7,24 +7,18 @@
  */
 int main(void)
 {
-	int i;
-	int fib[98];
+	int n = 98, c, a = 0, b = 1, i;
 
-	fib[0] = 1;
-	fib[1] = 2;
-	printf(", , ", fib[0], fib[1]);
-
-	for (i = 2; i < 98; i++)
+	if (n >= 1)
 	{
-		fib[i] = fib[i - 1] + fib[i - 2];
-		if (i == 97)
-		{
-			printf("\n", fib[i]);
-		}
-		else
-		{
-			printf(", ", fib[i]);
-		}
+		printf("%d ", a);
+	}
+	for (i = 1; i < n; i++)
+	{
+		printf("%d ", b);
+		c = a + b;
+		a = b;
+		b = c;
 	}
 	return (0);
 }
