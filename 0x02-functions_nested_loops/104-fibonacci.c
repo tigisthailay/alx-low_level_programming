@@ -7,14 +7,18 @@
  */
 int main(void)
 {
-	int n = 98, c, a = 0, b = 1, i;
+	int t1 = 0, t2 = 1, t3 = 0, n = 98;
 
-	for (i = 1 + 1; i < n; i++)
+	t3 = t1 + t2;
+
+	while (t3 <= n)
 	{
-		printf("%d ", b);
-		c = a + b;
-		a = b;
-		b = c;
+		printf("%d ", t3);
+		printf(',');
+		prinf(' ');
+		t1 = t2;
+		t2 = t3;
+		t3 = t1 + t2;
 	}
 	return (0);
 }
