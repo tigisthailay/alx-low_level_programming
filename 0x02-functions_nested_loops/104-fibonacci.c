@@ -7,18 +7,42 @@
  */
 int main(void)
 {
-	int t1 = 0, t2 = 1, t3 = 1, n = 98;
+	int co;
+	unsigned long fb1 = 0, fb2 = 1, sum;
+	unsigned long i, j, k, m;
+	unsigned long x, y;
 
-	t3 = t1 + t2;
-
-	while (t3 <= n)
+	for (co = 0; co < 92; co++)
 	{
-		printf(t3);
-		printf(',');
-		prinf(' ');
-		t1 = t2;
-		t2 = t3;
-		t3 = t1 + t2;
+		sum = fb1 + fb2;
+		printf("%lu, ", sum);
+
+		fb1 = fb2;
+		fb2 = sum;
 	}
+	i = fb1 / 10000000000;
+	k = fb2 / 10000000000;
+	j = fb1 % 10000000000;
+	m = fb2 % 10000000000;
+
+	for (co = 93; co < 99; co++)
+	{
+		x = i + k;
+		y = j + m;
+
+		if (j + m > 9999999999)
+		{
+			x = x + 1;
+			y = y % 10000000000;
+		}
+		printf("%lu%lu", x, y);
+		if (co != 98)
+			printf(",");
+		i = k;
+		j = m;
+		k = x;
+		m = y;
+	}
+	printf("\n");
 	return (0);
 }
