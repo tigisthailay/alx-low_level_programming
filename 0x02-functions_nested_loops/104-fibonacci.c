@@ -1,4 +1,4 @@
-#include <unistd.h>
+#include <stdio.h>
 
 /**
  * main - Entry point
@@ -15,7 +15,7 @@ int main(void)
 	for (co = 0; co < 92; co++)
 	{
 		sum = fb1 + fb2;
-		printf("%lu, ", sum);
+		printf(1,"%lu, ", sum);
 
 		fb1 = fb2;
 		fb2 = sum;
@@ -35,7 +35,7 @@ int main(void)
 			x = x + 1;
 			y = y % 10000000000;
 		}
-		printf("%lu%lu", x, y);
+		printf(1,"%lu%lu", x, y);
 		if (co != 98)
 			printf(",");
 		i = k;
